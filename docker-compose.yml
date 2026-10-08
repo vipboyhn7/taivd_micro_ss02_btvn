@@ -1,0 +1,37 @@
+services:
+  postgres:
+    image: postgres:16
+    container_name: ecommerce-postgres
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+    ports:
+      - "55432:5432"
+    volumes:
+      - postgres-data:/var/lib/postgresql/data
+      - ./docker/postgres/init.sql:/docker-entrypoint-initdb.d/init.sql:ro
+
+  user-service:
+    build: ./user-service
+    environment:
+      DB_URL: jdbc:postgresql://postgres:5432/user_db
+      DB_USERNAME: postgres
+      DB_PASSWORD: postgres
+    ports:
+      - "18081:8080"
+    depends_on:
+      - postgres
+
+  inventory-service:
+    build: ./inventory-service
+    environment:
+      DB_URL: jdbc:postgresql://postgres:5432/inventory_db
+      DB_USERNAME: postgres
+      DB_PASSWORD: postgres
+    ports:
+      - "18082:8080"
+    depends_on:
+      - postgres
+
+volumes:
+  postgres-data:
