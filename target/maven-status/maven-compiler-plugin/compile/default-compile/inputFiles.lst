@@ -1,10 +1,17 @@
 /Users/vuongdactai/Desktop/btvn02/src/main/java/com/example/orderservice/OrderServiceApplication.java
 /Users/vuongdactai/Desktop/btvn02/src/main/java/com/example/orderservice/controller/HealthCheckController.java
 /Users/vuongdactai/Desktop/btvn02/src/main/java/com/example/orderservice/controller/OrderController.java
+/Users/vuongdactai/Desktop/btvn02/src/main/java/com/example/orderservice/controller/ProductController.java
 /Users/vuongdactai/Desktop/btvn02/src/main/java/com/example/orderservice/dto/OrderResponse.java
+/Users/vuongdactai/Desktop/btvn02/src/main/java/com/example/orderservice/dto/ProductResponseDTO.java
 /Users/vuongdactai/Desktop/btvn02/src/main/java/com/example/orderservice/entity/Order.java
+/Users/vuongdactai/Desktop/btvn02/src/main/java/com/example/orderservice/entity/ProductEntity.java
 /Users/vuongdactai/Desktop/btvn02/src/main/java/com/example/orderservice/exception/GlobalExceptionHandler.java
 /Users/vuongdactai/Desktop/btvn02/src/main/java/com/example/orderservice/exception/OrderNotFoundException.java
+/Users/vuongdactai/Desktop/btvn02/src/main/java/com/example/orderservice/exception/ProductNotFoundException.java
 /Users/vuongdactai/Desktop/btvn02/src/main/java/com/example/orderservice/repository/InMemoryOrderRepository.java
+/Users/vuongdactai/Desktop/btvn02/src/main/java/com/example/orderservice/repository/InMemoryProductRepository.java
 /Users/vuongdactai/Desktop/btvn02/src/main/java/com/example/orderservice/repository/OrderRepository.java
+/Users/vuongdactai/Desktop/btvn02/src/main/java/com/example/orderservice/repository/ProductRepository.java
 /Users/vuongdactai/Desktop/btvn02/src/main/java/com/example/orderservice/service/OrderService.java
+/Users/vuongdactai/Desktop/btvn02/src/main/java/com/example/orderservice/service/ProductService.java

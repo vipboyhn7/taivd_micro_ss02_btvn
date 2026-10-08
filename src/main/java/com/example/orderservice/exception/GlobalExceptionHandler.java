@@ -15,4 +15,10 @@ public class GlobalExceptionHandler {
     public Map<String, String> handleOrderNotFound(OrderNotFoundException exception) {
         return Map.of("error", exception.getMessage());
     }
+
+    @ExceptionHandler(ProductNotFoundException.class)
+    @ResponseStatus(HttpStatus.NOT_FOUND)
+    public Map<String, String> handleProductNotFound(ProductNotFoundException exception) {
+        return Map.of("error", exception.getMessage());
+    }
 }
